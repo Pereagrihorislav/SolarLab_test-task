@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500&display=swap&subset=cyrillic-ext" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <h1 class="header__logo">ToDo List</h1>
+            </div>
+        </header>
+         
+        <main class="page">
+           <div class="page__container _container">
+
+                <div class="page__form-block form-block">
+                    <div class="form-block__body">
+                        <form class="form-block__form" id="form">
+                            <input  type="text" class="form-block__input" id="userInput" type="text" placeholder="Текст задачи" required>
+                            <button type="submit" class="form-block__button _buttons">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="page__task-block task-block">
+                    <h2 class="task-block__header header-block">Список задач</h2>
+                    <div class="task-block__body">
+                        <ul class="task-block__list" id="taskList"></ul>
+                    </div>
+                </div>
+
+           </div>
+        </main>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
